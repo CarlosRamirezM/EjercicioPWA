@@ -24,7 +24,7 @@ function Characters() {
                 limit: 24     
             })).then((result) => result.json()).then( (a) => {
                 setCharacters(a.data.results);
-                localStorage.setItem("characters", JSON.stringtify(a.data.results));
+                localStorage.setItem("characters", JSON.stringify(a.data.results));
             });
         }
     }, [])
